@@ -1,0 +1,12 @@
+<div class="max-w-[700px] m-auto">
+    <div class="w-full flex flex-col items-center gap-2">
+        <h2 class="text-3xl font-bold underline">{{faceSnap.title}}</h2>
+        <p>Mise en ligne le {{faceSnap.createdDate}}</p>
+        <img class='w-full' [src]="faceSnap.imageUrl" [alt]="">
+        <p>{{ faceSnap.description}}</p>
+        <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location}}</p>
+        <p>👍 {{faceSnap.snaps}}
+            <button class="border" type="button" (click)="onAddSnap()">{{button}}</button>
+        </p>
+    </div>
+</div>
