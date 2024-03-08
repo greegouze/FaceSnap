@@ -1,4 +1,4 @@
-<div class="max-w-[700px] m-auto border p-5 rounded-md shadow-lg" [ngClass]="{'bg-green-500' : faceSnap.snaps}">
+<div class="max-w-[700px] m-auto border p-5 rounded-md shadow-lg flex flex-col mb-5" [ngClass]="{'bg-green-500' : faceSnap.snaps}">
     <div class="w-full flex flex-col items-center gap-2">
         <h2 class="text-3xl font-bold p-5">{{faceSnap.title | uppercase}}</h2>
         <p>Mis en ligne {{ faceSnap.createdDate | date: 'à HH:mm, le d MMMM yyyy' }}</p>
