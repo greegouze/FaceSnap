@@ -29,7 +29,7 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppModule { 
   constructor() {
-    //use registerLocaleData pour envoyer 'information à mon app
+    //use registerLocaleData pour envoyer l'information à mon app
     registerLocaleData(fr.default);
   }
 }
