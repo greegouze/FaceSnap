@@ -9,13 +9,15 @@ import * as fr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
 import { HeaderComponent } from './header/header.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FaceSnapComponent,
     FaceSnapListComponent,
-    HeaderComponent
+    HeaderComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
