@@ -1,0 +1,13 @@
+<div class="max-w-[700px] m-auto border p-5 rounded-md shadow-lg flex flex-col mb-5" [ngClass]="{'bg-green-500' : faceSnap.snaps}">
+    <a routerLink="/facesnaps">Back</a>
+    <div class="w-full flex flex-col items-center gap-2">
+        <h2 class="text-3xl font-bold p-5">{{faceSnap.title | uppercase}}</h2>
+        <p>Mis en ligne {{ faceSnap.createdDate | date: 'à HH:mm, le d MMMM yyyy' }}</p>
+        <img class='w-full' [src]="faceSnap.imageUrl" [alt]="">
+        <p>{{ faceSnap.description}}</p>
+        <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location}}</p>
+        <p class="flex flex-col gap-2"><span [ngStyle]="{'color': faceSnap.snaps ? 'white' : 'red' }">👍 {{faceSnap.snaps}}</span>
+            <button class="border p-2 rounded-lg shadow-md" type="button" (click)="onAddSnap()">{{button}}</button>
+        </p>
+    </div>
+</div>
