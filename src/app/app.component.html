@@ -1,6 +1,8 @@
-<div class="flex flex-col bg-slate-900  gap-8 text-white h-screen">
+<div class="flex flex-col bg-slate-900 gap-8 text-white h-screen">
   <div>
+    <!-- la pipe async souscri à l'observable interval$ -->
+    <h1>{{ interval$ | async }}</h1>
     <app-header></app-header>
   </div>
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
